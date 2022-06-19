@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BlogStack Contact Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="JavaScript/blogstack.js"></script>
+</head>
+
+<header>
+    <button class="darkbtn" onclick="toggleDarkMode()">Toggle Dark</button><br>
+    <img src="blog-stack-logo.png" alt="BlogStack logo" />
+    <h1>Contact Form</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+<body>
+    <div class="contact-form">
+    <form method="GET" action="mailto:info@blogstack.com" enctype="text/plain">
+        <fieldset >
+            <legend>Contact Us</legend>
+            <label>Subject:</label>
+            <input type="text" name="subject" required />
+
+            <label>Message:</label>
+            <textarea name="body" cols="55" rows="20" required></textarea>
+
+            <br />
+            <input type="submit" value="Send" />
+        </fieldset>
+    </form>
+</div>
+
+
+
+</body>
+
+</html>

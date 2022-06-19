@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BlogStack Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="JavaScript/blogstack.js"></script>
+</head>
+
+<header>
+    <button class="darkbtn" onclick="toggleDarkMode()">Toggle Dark</button><br>
+    <img src="blog-stack-logo.png" alt="BlogStack logo" />
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+</nav>
+
+<body>
+    <div class="row">
+        <div class="column">
+            <form name="myForm" action="index.html" onsubmit="return validate()" method="post">
+
+                <fieldset>
+                    <legend>Create...</legend>
+                    <label for="title">Article Title:</label>
+                    <input type="text" name="title" id="title">
+
+                    <label for="author">Author:</label>
+                    <input type="text" name="author" id="author">
+
+                    <label for="content">Write your article here:</label>
+                    <textarea name="content" id="content" cols="85" rows="20"></textarea>
+                    <button class="submitbtn" id="mybutton" onclick="validate((document.getElementById('title').value),
+                    (document.getElementById('author').value),
+                    (document.getElementById('content').value))">Publish
+                    </button>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="column">
+            <h1>History of Russia</h1>
+            <h3>Vladimir Vladimirovich Putin</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus
+                venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget
+                aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor
+                sed accumsan convallisrem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium
+                urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula,
+                risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent
+                scelerisque tortor sed accumsan convallisrem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.
+                Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+                Praesent scelerisque tortor sed accumsan convallisrem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna
+                tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam
+                orci in velit. Praesent scelerisque tortor sed accumsan convallisrem ipsum dolor sit amet, consectetur
+                adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget
+                elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget
+                luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+    </div>
+</body>
+
+</html>
