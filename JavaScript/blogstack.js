@@ -4,6 +4,22 @@ function toggleDarkMode() {
     element.classList.toggle("dark-mode");
 }
 
+// validate for empty fields
+// if empty, alert user
+// if not empty, submitForm()
+// if submit button is clicked, validate()
+function validateForm() {
+    var x = document.forms["myForm"]["author"].value;
+    var y = document.forms["myForm"]["title"].value;
+    var z = document.forms["myForm"]["content"].value;
+    if (x == "" || y == "" || z == "") {
+        alert("Please fill out all fields");
+    } else {
+        submitForm(author, title, content);
+    }
+}
+
+
 // get values from the html form, error pops up if empty
 // otherwise submitForm() is called, passing values from the form
 var count = 0;
@@ -11,7 +27,7 @@ function validate() {
     var title = document.getElementById("title").value;
     var author = document.getElementById("author").value;
     var content = document.getElementById("content").value;
-    if (title == "" || author == "" || content == "") {
+    if ((title == "") || (author == "") || (content == "")) {
         alert("Please fill in all fields");
         return false;
     }
